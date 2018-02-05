@@ -1,0 +1,261 @@
+{
+  "fieldName": "author",
+  "fieldNodes": [
+    {
+      "kind": "Field",
+      "name": {
+        "kind": "Name",
+        "value": "author",
+        "loc": { "start": 27, "end": 33 }
+      },
+      "arguments": [
+        {
+          "kind": "Argument",
+          "name": {
+            "kind": "Name",
+            "value": "id",
+            "loc": { "start": 34, "end": 36 }
+          },
+          "value": {
+            "kind": "StringValue",
+            "value": "user-1",
+            "block": false,
+            "loc": { "start": 38, "end": 46 }
+          },
+          "loc": { "start": 34, "end": 46 }
+        }
+      ],
+      "directives": [],
+      "selectionSet": {
+        "kind": "SelectionSet",
+        "selections": [
+          {
+            "kind": "Field",
+            "name": {
+              "kind": "Name",
+              "value": "username",
+              "loc": { "start": 54, "end": 62 }
+            },
+            "arguments": [],
+            "directives": [],
+            "loc": { "start": 54, "end": 62 }
+          },
+          {
+            "kind": "Field",
+            "name": {
+              "kind": "Name",
+              "value": "posts",
+              "loc": { "start": 67, "end": 72 }
+            },
+            "arguments": [],
+            "directives": [],
+            "selectionSet": {
+              "kind": "SelectionSet",
+              "selections": [
+                {
+                  "kind": "Field",
+                  "name": {
+                    "kind": "Name",
+                    "value": "id",
+                    "loc": { "start": 81, "end": 83 }
+                  },
+                  "arguments": [],
+                  "directives": [],
+                  "loc": { "start": 81, "end": 83 }
+                },
+                {
+                  "kind": "Field",
+                  "name": {
+                    "kind": "Name",
+                    "value": "title",
+                    "loc": { "start": 90, "end": 95 }
+                  },
+                  "arguments": [],
+                  "directives": [],
+                  "loc": { "start": 90, "end": 95 }
+                }
+              ],
+              "loc": { "start": 73, "end": 101 }
+            },
+            "loc": { "start": 67, "end": 101 }
+          }
+        ],
+        "loc": { "start": 48, "end": 105 }
+      },
+      "loc": { "start": 27, "end": 105 }
+    }
+  ],
+  "returnType": "User!",
+  "parentType": "Query",
+  "path": { "key": "author" },
+  "schema": {
+    "_queryType": "Query",
+    "_mutationType": null,
+    "_subscriptionType": null,
+    "_directives": [
+      {
+        "name": "skip",
+        "description":
+          "Directs the executor to skip this field or fragment when the `if` argument is true.",
+        "locations": ["FIELD", "FRAGMENT_SPREAD", "INLINE_FRAGMENT"],
+        "args": [
+          {
+            "name": "if",
+            "description": "Skipped when true.",
+            "type": "Boolean!"
+          }
+        ]
+      },
+      {
+        "name": "include",
+        "description":
+          "Directs the executor to include this field or fragment only when the `if` argument is true.",
+        "locations": ["FIELD", "FRAGMENT_SPREAD", "INLINE_FRAGMENT"],
+        "args": [
+          {
+            "name": "if",
+            "description": "Included when true.",
+            "type": "Boolean!"
+          }
+        ]
+      },
+      {
+        "name": "deprecated",
+        "description":
+          "Marks an element of a GraphQL schema as no longer supported.",
+        "locations": ["FIELD_DEFINITION", "ENUM_VALUE"],
+        "args": [
+          {
+            "name": "reason",
+            "description":
+              "Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted in [Markdown](https://daringfireball.net/projects/markdown/).",
+            "type": "String",
+            "defaultValue": "No longer supported"
+          }
+        ]
+      }
+    ],
+    "_typeMap": {
+      "Query": "Query",
+      "ID": "ID",
+      "User": "User",
+      "String": "String",
+      "Post": "Post",
+      "__Schema": "__Schema",
+      "__Type": "__Type",
+      "__TypeKind": "__TypeKind",
+      "Boolean": "Boolean",
+      "__Field": "__Field",
+      "__InputValue": "__InputValue",
+      "__EnumValue": "__EnumValue",
+      "__Directive": "__Directive",
+      "__DirectiveLocation": "__DirectiveLocation"
+    },
+    "_implementations": {},
+    "__validationErrors": []
+  },
+  "fragments": {},
+  "rootValue": null,
+  "operation": {
+    "kind": "OperationDefinition",
+    "operation": "query",
+    "name": {
+      "kind": "Name",
+      "value": "AuthorWithPosts",
+      "loc": { "start": 7, "end": 22 }
+    },
+    "variableDefinitions": [],
+    "directives": [],
+    "selectionSet": {
+      "kind": "SelectionSet",
+      "selections": [
+        {
+          "kind": "Field",
+          "name": {
+            "kind": "Name",
+            "value": "author",
+            "loc": { "start": 27, "end": 33 }
+          },
+          "arguments": [
+            {
+              "kind": "Argument",
+              "name": {
+                "kind": "Name",
+                "value": "id",
+                "loc": { "start": 34, "end": 36 }
+              },
+              "value": {
+                "kind": "StringValue",
+                "value": "user-1",
+                "block": false,
+                "loc": { "start": 38, "end": 46 }
+              },
+              "loc": { "start": 34, "end": 46 }
+            }
+          ],
+          "directives": [],
+          "selectionSet": {
+            "kind": "SelectionSet",
+            "selections": [
+              {
+                "kind": "Field",
+                "name": {
+                  "kind": "Name",
+                  "value": "username",
+                  "loc": { "start": 54, "end": 62 }
+                },
+                "arguments": [],
+                "directives": [],
+                "loc": { "start": 54, "end": 62 }
+              },
+              {
+                "kind": "Field",
+                "name": {
+                  "kind": "Name",
+                  "value": "posts",
+                  "loc": { "start": 67, "end": 72 }
+                },
+                "arguments": [],
+                "directives": [],
+                "selectionSet": {
+                  "kind": "SelectionSet",
+                  "selections": [
+                    {
+                      "kind": "Field",
+                      "name": {
+                        "kind": "Name",
+                        "value": "id",
+                        "loc": { "start": 81, "end": 83 }
+                      },
+                      "arguments": [],
+                      "directives": [],
+                      "loc": { "start": 81, "end": 83 }
+                    },
+                    {
+                      "kind": "Field",
+                      "name": {
+                        "kind": "Name",
+                        "value": "title",
+                        "loc": { "start": 90, "end": 95 }
+                      },
+                      "arguments": [],
+                      "directives": [],
+                      "loc": { "start": 90, "end": 95 }
+                    }
+                  ],
+                  "loc": { "start": 73, "end": 101 }
+                },
+                "loc": { "start": 67, "end": 101 }
+              }
+            ],
+            "loc": { "start": 48, "end": 105 }
+          },
+          "loc": { "start": 27, "end": 105 }
+        }
+      ],
+      "loc": { "start": 23, "end": 107 }
+    },
+    "loc": { "start": 1, "end": 107 }
+  },
+  "variableValues": {}
+}
